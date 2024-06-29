@@ -1,0 +1,54 @@
+body, html {
+    margin: 15px;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+}
+
+#title {
+  text-align: center;
+  border-bottom: 3px solid black;
+  padding: 10px;
+}
+
+#description {
+  padding: 10px;
+}
+
+input {
+  padding: 3px;
+}
+
+.divider {
+  padding-bottom: 30px;
+}
+
+.fieldset {
+  padding: 20px;
+  background-color: #dee2e6ac;
+}
+
+textarea {
+    padding: 3px;
+}
+
+#thanks {
+  text-align: center;
+}
+
+#submit {
+  text-align: center;
+  padding: 3px;
+  background-color: #e9ecef;
+}
+
+.button {
+  text-align: center;
+  padding: 20px 0 50px 0;
+}
+
+#submit:hover {
+  background-color: #495057;
+  color: white;
+}

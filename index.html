@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <h1 id="title">Welcome to Our Dog Survey!</h1>
+      <p id="description">At our adoption agency, we are passionate about finding loving homes for dogs in need. We believe that understanding the preferences and opinions of dog lovers like you is essential in improving our adoption process.</p>
+      <form method="post" id="survey-form">
+        <div class="divider">
+        <fieldset class="fieldset">
+          <label for="name" id="name-label">Name: <input id="name" type="text" name="name" placeholder="Last, First"required></input></label>
+          <label for="email" id="email-label">Email: <input id="email" type="email" name="email" placeholder="example@email.com" required></input></label>
+          <label for="age" id="number-label">Age: <input id="number" type="number" text="number" name="age" min="13" max="120" placeholder="45" ></input></label>
+        </fieldset>
+        </div>
+        <div class="divider">
+        <fieldset class="fieldset">
+          <label for="own-dog-question">Would you consider adopting when looking for a dog?
+            <select id="dropdown" name="own-dog-question">
+              <option value="">(select one)</option>
+              <option value="1">Yes</option>
+              <option value="2">No</option>
+            </select>
+          </label>
+        </fieldset>
+        </div>
+        <div class="divider">
+        <fieldset class="fieldset">
+          <legend for="want-dog">Have you adopted a dog in the past?
+            <label for="want-dog">
+              <input id="want-dog" type="radio" name="want-dog" class="inline" value="yes" checked >Yes</label>
+            <label for="want-dog"><input id="want-dog" type="radio" name="want-dog" class="inline" value="no" >No</label>
+          </legend>
+        </fieldset>
+        </div>
+        <div class="divider">
+        <fieldset class="fieldset">
+          <div>
+          <label for="breed-question">Which types of dog breeds are your favorite?
+          </div></br>
+            <input class="inline" type="checkbox" name="breed-question" value="chihuahua" >Chihuahua</input>
+            <input class="inline" type="checkbox" name="breed-question" value="pug">Pug</input>
+            <input class="inline" type="checkbox" name="breed-quetion" value="yorkshire terrier">Yorkshire Terrier</input>
+            <input class="inline" type="checkbox" name="breed-question" value="french-bulldog">French Bulldog</input>
+            <input class="inline" type="checkbox" name="breed-question" value="pomeranian">Pomeranian</input>
+            <input class="inline" type="checkbox" name="breed-question" value="shih-tzu">Shih Tzu</input>
+            <input class="inline" type="checkbox" name="breed-question" value="other">Other</input>
+          </label>
+        </fieldset>
+        </div>
+        <div class="divider">
+        <fieldset class="fieldset">
+          <div><label for="adoption">Share your views on why adopting pets is important.</div></br>
+            <textarea id="adoption" name="adoption" rows="3" cols="30" placeholder="Pet adoptions are important because..."></textarea>
+          </label>
+        </fieldset>
+        </div>
+        <div>
+          <p id="thanks">Thank you for taking the time to share your thoughts!</p>
+        </div>
+        <div class="button">
+          <input id="submit" type="submit"></input>
+        </div>
+      </form>
+    </body>
+</html>
